@@ -11,7 +11,7 @@ documentation = "https://docs.rs/pilkki/"
 keywords = ["embedded", "kampela", "serial"]
 
 [dependencies]
-clap = { version = "4.5.18", features = ["cargo"] }
+clap = { version = "4.5.23", features = ["cargo"] }
 crc = "3.2.1"
 hex = "0.4.3"
 memmem = "0.1.1"
