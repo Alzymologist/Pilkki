@@ -1,16 +1,21 @@
 [package]
 name = "pilkki"
-version = "0.1.0"
+description = "Flasher tool for Kampela project"
+license = "GPL-3.0-or-later"
+version = "0.1.1"
+authors = ["Alexander Slesarev <slesarew@gmail.com>", "Vera Abramova <abramova.vera@gmail.com>"]
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+repository = "https://github.com/Kalapaja/pilkki"
+homepage = "https://kampe.la"
+documentation = "https://docs.rs/pilkki/"
+keywords = ["embedded", "kampela", "serial"]
 
 [dependencies]
-clap = { version = "4.5.1", features = ["cargo"] }
-crc = "3.0.1"
+clap = { version = "4.5.18", features = ["cargo"] }
+crc = "3.2.1"
 hex = "0.4.3"
 memmem = "0.1.1"
-serialport = { version = "4.3.0", default-features = false }
+serialport = { version = "4.5.1", default-features = false }
 
 [target.'cfg(target_os = "linux")'.dependencies]
 serialport = {version = "4.3.0", features = ["libudev"]}
