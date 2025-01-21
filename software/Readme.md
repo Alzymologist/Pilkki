@@ -27,6 +27,11 @@ ls /dev/ttyUSB*
 ls /dev/tty.* /dev/cu.*
 ```
 
+**Windows**
+
+Open Device Manager.
+Locate Ports (COM & LPT) in the list.
+
 ### Verify Connection to the Device
 
 To connect to the device, run:
@@ -50,3 +55,12 @@ cargo run -- write --port /port/address --input /path/to/your/binary.bin
 You can either:
 - Build the binary using the code from the [kampela-firmware](https://github.com/Kalapaja/kampela-firmware) repository.
 - Download the compiled binary from the [releases](https://github.com/Kalapaja/kampela-firmware/releases) section.
+
+**Windows**
+
+You may want to make Pilkki.exe globally accessible to use in scripts
+
+- Open start menu. Type and open *Edit environment variables for your account*
+- There you see two boxes, in *User Variables* box find *path* variable, select and click **Edit**
+- In pop up window, click **New**
+- Type the directory path of your pilkki.exe
